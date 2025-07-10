@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 
-# Copyright Andreas Misje 2024, 2022 Aurora Networks Managed Services
-# See https://github.com/misje/wazuh-opencti for documentation
-#
-# This program is free software; you can redistribute it
-# and/or modify it under the terms of the GNU General Public
-# License (version 2) as published by the FSF - Free Software
-# Foundation.
-
 import sys
 import os
 from socket import socket, AF_UNIX, SOCK_DGRAM
