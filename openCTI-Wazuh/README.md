@@ -30,9 +30,12 @@ En el archivo ossec.conf (/var/ossec/etc/ossec.conf), añadiremos lo siguiente a
 </ossec_config>
 ```
 #### Scripts
-Añadimos los archivos descargables en este repositorio en el directorio de integraciones (/var/ossec/integrations), manteniendo sus nombres, y le damos los permisos necesarios con el siguiente comando:
+Añadimos los archivos descargables en este [repositorio](https://github.com/reycotallo98/Blue-Team-Scripts.git) en el directorio de integraciones (/var/ossec/integrations), manteniendo sus nombres, y le damos los permisos necesarios, para hacer este proceso podeis utilizar el siguiente comando:
 ```bash
-chmod 755 custom-opencti*
+git clone https://github.com/reycotallo98/Blue-Team-Scripts.git
+mv Blue-Team-Scripts/openCTI-Wazuh/* /var/ossec/integrations/*
+rm -rf Blue-Team-Scripts
+chmod 755 /var/ossec/integrations/custom-opencti*
 ```
 #### Reglas
 Añadir las siguientes reglas a Wazuh:
